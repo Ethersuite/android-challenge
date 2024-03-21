@@ -1,7 +1,11 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt.gradle)
 }
+
+val jvmVersion = JavaVersion.VERSION_11
 
 android {
     namespace = "com.ethermail.androidchallenge"
@@ -30,11 +34,12 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = jvmVersion
+        targetCompatibility = jvmVersion
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = jvmVersion.toString()
+        freeCompilerArgs = listOf("-Xcontext-receivers")
     }
     buildFeatures {
         compose = true
@@ -50,6 +55,11 @@ android {
 }
 
 dependencies {
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.android.compiler)
+
+    // androidx: hilt
+    implementation(libs.androidx.hilt.navigation.compose)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
