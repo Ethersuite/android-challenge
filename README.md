@@ -27,6 +27,7 @@ Below are some key points that we use to evaluate your solution:
 - Use any third party library not included in the project if desired.
 - The webserver API used in this exercise can frequently return errors when many requests (sometimes just a few) are performed from the same IP address. Take this into account as part of the exercise and treat errors properly.
 - consider your commits, we want to see how you work and how you think.
+- We do want to see how you work with and structure your composable components
 - This test should not take you more than 3-4 hours to complete. If you find yourself spending more time than this, please stop and submit what you have. Add comments in the code to explain what you would have done if you had more time.
 
 # How to submit the code challenge
