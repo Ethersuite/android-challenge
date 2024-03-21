@@ -16,7 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.ethermail.androidchallenge.data.model.markets.MarketData
 
-// TODO: Implement MarketScreen properly
+// TODO: Implement MarketScreen properly with the real data from CoinCap API as part of the code challenge
 @Composable
 fun MarketScreen(market: MarketData) = Box(modifier = Modifier.fillMaxSize()) {
     Card(
