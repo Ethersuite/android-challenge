@@ -9,6 +9,7 @@ lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.2"
 composeBom = "2024.03.00"
 androidxComposeCompiler = "1.5.9" #NOTE: is in use, called by :app module's build.gradle.kts
+gson = "2.10.1"
 retrofit = "2.9.0"
 retrofitOkhttp = "4.11.0"
 androidxHilt = "1.2.0"
@@ -34,6 +35,7 @@ androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-com
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "pluginHilt" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "pluginHilt" }
 hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "pluginHilt" }
+google-gson = { group = "com.google.code.gson", name="gson", version.ref = "gson" }
 squareup-retrofit = { group = "com.squareup.retrofit2", name="retrofit", version.ref = "retrofit" }
 squareup-retrofit-gson = { group = "com.squareup.retrofit2", name="converter-gson", version.ref = "retrofit" }
 squareup-logginginterceptor = { group = "com.squareup.okhttp3", name="logging-interceptor", version.ref = "retrofitOkhttp" }
