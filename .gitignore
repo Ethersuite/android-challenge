@@ -67,12 +67,12 @@ gen-external-apklibs
 obj/
 
 # IntelliJ IDEA
-.idea
 *.iml
 *.iws
 /out/
 
 # User-specific configurations
+.idea
 .idea/caches/
 .idea/libraries/
 .idea/shelf/
