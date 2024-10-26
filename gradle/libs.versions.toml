@@ -1,20 +1,20 @@
 [versions]
 agp = "8.2.2"
-kotlin = "1.9.22"
-coreKtx = "1.12.0"
+kotlin = "1.9.25"
+coreKtx = "1.13.1"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-lifecycleRuntimeKtx = "2.7.0"
-activityCompose = "1.8.2"
-composeBom = "2024.03.00"
-androidxComposeCompiler = "1.5.9" #NOTE: is in use, called by :app module's build.gradle.kts
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.6"
+activityCompose = "1.9.3"
+composeBom = "2024.10.00"
+androidxComposeCompiler = "1.5.15" #NOTE: is in use, called by :app module's build.gradle.kts
 gson = "2.10.1"
-retrofit = "2.9.0"
-retrofitOkhttp = "4.11.0"
+retrofit = "2.11.0"
+retrofitOkhttp = "4.12.0"
 androidxHilt = "1.2.0"
-pluginHilt = "2.49"
-ksp = "1.9.22-1.0.17"
+pluginHilt = "2.51"
+ksp = "1.9.25-1.0.20"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
